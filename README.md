@@ -1,16 +1,42 @@
-# dorttedort
+# Dörtte Dört - Online Sayı Tahmin Düellosu 
 
-A new Flutter project.
+**Dortte Dort**, oyuncuların birbirlerinin tuttuğu 4 haneli gizli sayıları gerçek zamanlı olarak tahmin etmeye çalıştığı, strateji ve mantık odaklı bir mobil oyundur. **Flutter** ve **Firebase** kullanılarak geliştirilmiştir.
 
-## Getting Started
+## 🚀 Oyunun Mantığı
 
-This project is a starting point for a Flutter application.
+Oyun, klasik "Bulls and Cows" (Boğalar ve İnekler) veya "Mastermind" mantığı üzerine kuruludur:
+1. Her oyuncu oyun başında 4 haneli, rakamları birbirinden farklı bir sayı tutar.
+2. Sırayla tahminler yapılır.
+3. Her tahminden sonra sistem, girdiğiniz 4 rakamın her biri için ayrı ayrı geri bildirim verir:
+   - ✅ **Yeşil Tik:** Rakam doğru ve yeri de doğru.
+   - ❌ **Kırmızı Çarpı:** Rakam yanlış veya yeri yanlış.
+4. Rakibinin sayısını ilk bulan düelloyu kazanır!
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Ekran Görüntüleri
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Profil ve Başlangıç | Oyun Ekranı | Oyun Odası | Oyun Sonu |
+|:---:|:---:|:---:|:---:|
+| <img src="images/profil.png" width="200"> | <img src="images/game.png" width="200"> | <img src="images/room.png" width="200"> | <img src="images/finish.png" width="200"> |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Kullanılan Teknolojiler
+
+- **Framework:** Flutter
+- **Backend:** Firebase
+  - **Authentication:** Anonim veya kayıtlı kullanıcı girişi.
+  - **Cloud Firestore:** Oyun odalarının yönetimi, anlık hamle takibi ve skor tablosu.
+  - **Cloud Storage:** Kullanıcı profil fotoğraflarının barındırılması.
+
+## ✨ Özellikler
+
+- **Gerçek Zamanlı Düello:** Firebase altyapısı sayesinde rakibinizin hamlelerini anlık olarak görebilirsiniz.
+- **Profil Yönetimi:** Kendi profil fotoğrafınızı yükleyebilir ve istatistiklerinizi takip edebilirsiniz.
+- **Oyun Odaları:** Arkadaşlarınızla veya rastgele rakiplerle oynamak için oda sistemi.
+- **Akıllı Geri Bildirim:** Tahminleriniz için detaylı analiz sistemi.
+
+## ⚙️ Kurulum
+
+Projeyi yerelinizde çalıştırmak için:
+
+1. Bu depoyu klonlayın:
+   ```bash
+   git clone [https://github.com/mustafaemirata/Dortte-Dort.git](https://github.com/mustafaemirata/Dortte-Dort.git)
